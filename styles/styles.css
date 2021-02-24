@@ -1,0 +1,484 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/*HEADER*/
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/Header.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+header .contenedor{
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+header .contenedor .content_menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 5%;
+    padding-bottom: 25px;
+    transition: 0.5s ease-in-out;
+}
+
+header .contenedor .sticky{
+    background-color:  rgba(33, 106, 175, 0.911);
+}
+
+header .contenedor .content_menu h1{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 30px;
+    margin-top: 25px;
+    color: rgb(255, 255, 255);
+}
+header .contenedor .conten_text p{
+    margin: 0 auto;
+    color: rgb(207, 253, 251);
+    font-size: 40px;
+}
+header .contenedor .conten_text{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+    text-shadow: 0 0 5px ;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+header .contenedor .content_menu ul li{
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    margin: 0px 30px;
+    margin-top: 30px;
+}
+
+header .contenedor .content_menu ul li a{
+    text-decoration: none;
+    display: block;
+    height: 50%;
+    color: white;
+}
+
+header .contenedor .content_menu ul li a:hover{
+    text-shadow: 0 0 5px;
+    font-size: 15px;
+    color: rgb(207, 253, 251);
+}
+
+/*FIN DE HEADER*/
+
+/*CONTENEDOR CAS*/
+.conten-cas{
+  overflow: hidden;
+}
+.conten-cas .contenedor{
+    display: flex;
+    justify-content: space-around;
+}
+.conten-cas .contenedor .cas{
+    width: 280px;
+    height: 300px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.conten-cas .contenedor .cas p{
+    margin-top: 20px;
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.conten-cas .contenedor .prr p{
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(104, 104, 104);
+}
+/*FIN CONTENEDOR CAS*/
+
+/*CONTENEDOR AMS*/
+
+.conten-ams .contenedor{
+    display: flex;
+    justify-content: space-around;
+}
+
+.conten-ams .contenedor .dv{
+    width: 280px;
+    height: 300px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.conten-ams .contenedor .dv i{
+    font-size: 50px;
+    color: rgb(33, 106, 175);
+}
+
+@keyframes mover{
+    0%{
+        transform: translate(50%)
+    }
+}
+.conten-ams .contenedor .dv h2{
+    margin-top: 20px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(48, 47, 47);
+}
+
+.conten-ams .contenedor .dv p{
+    margin-top: 20px;
+    font-size: 15px;
+    color: rgb(104, 104, 104);
+    font-family: 'Roboto', sans-serif;
+}
+/*FIN CONTENEDOR AMS*/
+
+/*CONTENEDOR HDM*/
+.conten-hdm{
+  overflow: hidden;
+}
+.conten-hdm .grid50{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: rgb(185, 214, 255);
+}
+
+.conten-hdm .grid50 img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.conten-hdm .grid50 .hdm h1{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.conten-hdm .grid50 .hdm p{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: rgb(73, 73, 73);
+    margin-bottom: 10%;
+}
+/*FIN CONTENEDOR HDM*/
+
+/*CONTENEDOR PRECIOS*/
+.conten-precios .contenedor .gr{
+  overflow: hidden;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    min-height: 500px;
+    background-color: #F4F4F4;
+}
+
+.conten-precios .contenedor .gr .pa{
+    text-align: center;
+    height: 90%;
+    margin: auto;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.conten-precios .contenedor .gr .pa h1{
+    font-size: 20px;
+    color: rgb(33, 106, 175);
+    font-weight: lighter;
+}
+
+.conten-precios .contenedor .gr .pa h2{
+    font-size: 40px;
+}
+
+.conten-precios .contenedor .gr .pa p{
+    font-size: 15px;
+ 
+}
+
+.conten-precios .contenedor .gr .pa button{
+    font-size: 20px;
+    margin: 20px;
+    color: rgb(33, 106, 175);
+    padding: 5px 20px;
+    border: 1px solid  rgb(33, 106, 175);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.conten-precios .contenedor .gr .pa button:hover{
+    letter-spacing: 2px;
+    background-color: rgb(33, 106, 175);
+    color: white;
+    border: none ;
+}
+
+.conten-precios .contenedor .gr .active{
+    background-color: white;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+}
+
+.conten-precios .contenedor .gr .active h1{
+    font-weight: 900;
+}
+
+.conten-precios .contenedor .gr .active button{
+    font-size: 20px;
+    margin: 20px;
+    background-color: rgb(33, 106, 175);
+    color: white;
+    padding: 5px 20px;
+    border: none ;
+}
+
+.conten-precios .contenedor .gr .active button:hover{
+    color: rgb(33, 106, 175);
+    border: 1px solid  rgb(33, 106, 175);
+    background-color: white;
+}
+
+/*FIN CONTENEDOR PRECIOS*/
+
+/*CONTENEDOR CONTACTANOS*/
+.conten-contactanos{
+    overflow: hidden;
+    width: 100%;
+    padding: 30px;
+    margin-top: 30px;
+    background-image: url(/img/Contact.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.conten-contactanos .contenedor .grid{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.conten-contactanos .contenedor .grid .info-us{
+    margin: auto;
+    padding: 40px 40px 120px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    min-height: 450px;
+    min-width: 330px;
+}
+
+.conten-contactanos .contenedor .grid .info-us h2{
+    font-size: 30px;
+    color: rgb(33, 106, 175);
+}
+
+.conten-contactanos .contenedor .grid .div-info-us div{
+    margin-bottom: 20px;
+}
+.conten-contactanos .contenedor .grid .div-info-us p i{
+    color: rgb(33, 106, 175);
+    font-size: 25px;
+}
+
+.conten-contactanos .contenedor .grid .form{
+    margin: auto;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    min-height: 450px;
+    min-width: 70%;
+}
+
+.conten-contactanos .contenedor .grid .form h2{
+    font-size: 30px;
+    color: rgb(33, 106, 175);
+}
+.conten-contactanos .contenedor .grid .form input[type=text], 
+.conten-contactanos .contenedor .grid .form input[type=email],
+.conten-contactanos .contenedor .grid .form textarea{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.conten-contactanos .contenedor .grid .form  input[type=text]:hover, 
+.conten-contactanos .contenedor .grid .form  input[type=email]:hover,
+.conten-contactanos .contenedor .grid .form  textarea:hover{
+    background-color: rgb(247, 247, 247);
+}
+
+.conten-contactanos .contenedor .grid .form input[type=text]::placeholder, 
+.conten-contactanos .contenedor .grid .form input[type=email]::placeholder,
+.conten-contactanos .contenedor .grid .form textarea::placeholder{
+    font-family: 'Roboto', sans-serif;
+}
+
+.conten-contactanos .contenedor .grid .form input[type=submit]{
+    background-color: rgb(33, 106, 175);
+    color: white;
+    border: none;
+    padding: 10px;
+    min-width: 100px;
+    width: 15%;
+    max-width: 15%;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    font-family: 'Roboto', sans-serif;
+}
+.conten-contactanos .contenedor .grid .form input[type=submit]:hover{
+    color: rgb(33, 106, 175);
+    border: 1px solid  rgb(33, 106, 175);
+    background-color: white;
+}
+/*FIN CONTENEDOR CONTACTANOS*/
+
+/*FOOTER*/
+.footer {
+    background-color: black;
+    padding: 20px;
+}
+.footer .contenedor{
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+.footer .contenedor div{
+    color: white;
+}
+
+.footer .contenedor div p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.footer .contenedor div i{
+    color: white;
+    margin-left: 3px;
+    font-size: 20px;
+}
+
+.footer .contenedor div i:hover{
+    color: rgb(33, 106, 175);
+    font-size: 23px;
+}
+
+/*FIN FOOTER*/
+
+
+/* Responsive nav*/
+@media (max-width: 900px){
+  .content_menu{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto !important;
+  }
+  .contenedor .conten_text{
+    width: 100%;
+    height: 80%;
+  }
+  .nav-toggle{
+    width: 40px;
+    height: 45px;
+    margin-top: 25px;
+    display: block;
+    float: right;
+    cursor: pointer;
+    text-align: center;
+  }
+  .nav-toggle::before{
+    content: '\f0c9';
+    font-family: "FontAwesome";
+    font-size: 30px;
+    color: white;
+  }
+  .nav-toggle.active::before{
+    content: '\f00d';
+    font-family: "FontAwesome";
+  }
+  nav{
+    display: none;
+  }
+  nav.active{
+    display: block;
+    width: 100%;
+  }
+  nav.active ul{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .conten-contactanos .contenedor .grid{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .conten-contactanos .contenedor .grid .info-us{
+    width: 80%;
+    margin-bottom: 40px;
+  }
+  .conten-contactanos .contenedor .grid .form{
+    width: 80%;
+  }
+  
+  
+}
+
+@media (max-width: 600px){
+  .conten-cas .contenedor{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .conten-cas .contenedor .cas{
+    height: auto;
+  }
+  .conten-ams .contenedor{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .conten-hdm .grid50{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .conten-precios .contenedor .gr{
+    display: flex;
+    flex-direction: column;
+  }
+
+}

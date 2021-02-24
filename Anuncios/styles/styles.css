@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+/*HEADER*/
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/Anuncios/Img/Header.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header .contenedor{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+header .contenedor .content_menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 5%;
+    padding-bottom: 25px;
+    transition: .5s ease-in-out;
+}
+
+header .contenedor .sticky{
+    background-color:  rgba(33, 106, 175, 0.911);
+}
+
+header .contenedor .content_menu h1{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 30px;
+    margin-top: 25px;
+    color: rgb(255, 255, 255);
+}
+
+header .contenedor .conten_text{
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    text-shadow: 0 0 5px ;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .contenedor .conten_text p{
+    margin-left: 10px;
+    color: rgb(207, 253, 251);
+    font-size: 40px;
+}
+
+header .contenedor .content_menu ul li{
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    margin: 0px 30px;
+    margin-top: 30px;
+}
+
+header .contenedor .content_menu ul li a{
+    text-decoration: none;
+    display: block;
+    height: 50%;
+    color: white;
+}
+
+header .contenedor .content_menu ul li a:hover{
+    text-shadow: 0 0 5px;
+    font-size: 15px;
+    color: rgb(207, 253, 251);
+}
+
+/*FIN DE HEADER*/
+
+/*CONTENEDOR EC*/
+.conten-ec .contenedor div{
+    margin-top: 60px;
+    text-align: center;
+}
+
+.conten-ec .contenedor div h1{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(33, 106, 175);
+}
+
+.conten-ec .contenedor div p{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+/*FIN CONTENEDOR EC*/
+
+/*CONTENEDOR ANUNCIOS*/
+.conten-anuncios .contenedor{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin: 50px auto;
+    overflow: hidden;
+    height: 560px;
+}
+
+.conten-anuncios .contenedor .card-anuncios{
+    text-align: center;
+}
+
+.conten-anuncios .contenedor .card-anuncios img{
+    width: 95%;
+    height: 60%;
+}
+
+.conten-anuncios .contenedor .card-anuncios img:hover{
+    width: 97%;
+    height: 62%; 
+}
+
+.conten-anuncios .contenedor .card-anuncios h1{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 0;
+}
+
+.conten-anuncios .contenedor .card-anuncios p{
+  text-align: start;
+    font-size: 15px;
+    color: rgb(104, 104, 104);
+    font-family: 'Roboto', sans-serif;
+    line-height: 22px;
+}
+/*FIN CONTENEDOR ANUNCIOS*/
+
+/*FOOTER*/
+.footer {
+    background-color: black;
+    padding: 20px;
+}
+.footer .contenedor{
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+.footer .contenedor div{
+    color: white;
+}
+
+.footer .contenedor div p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.footer .contenedor div i{
+    color: white;
+    margin-left: 3px;
+    font-size: 20px;
+}
+
+.footer .contenedor div i:hover{
+    color: rgb(33, 106, 175);
+    font-size: 23px;
+}
+
+/*FIN FOOTER*/
+
+@media (max-width: 900px){
+  .content_menu{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto !important;
+  }
+  .contenedor .conten_text{
+    width: 100%;
+    height: 80%;
+  }
+  .nav-toggle{
+    width: 40px;
+    height: 45px;
+    margin-top: 25px;
+    display: block;
+    float: right;
+    cursor: pointer;
+    text-align: center;
+  }
+  .nav-toggle::before{
+    content: '\f0c9';
+    font-family: "FontAwesome";
+    font-size: 30px;
+    color: white;
+  }
+  .nav-toggle.active::before{
+    content: '\f00d';
+    font-family: "FontAwesome";
+  }
+  nav{
+    display: none;
+  }
+  nav.active{
+    display: block;
+    width: 100%;
+  }
+  nav.active ul{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}

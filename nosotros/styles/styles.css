@@ -1,0 +1,377 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.contenedor{
+  width: 90%;
+  max-width: 1280px;
+  margin: auto;
+}
+
+/*HEADER*/
+header{
+  width: 100%;
+  height: 100vh;
+  background-image: url(/nosotros/img/Header.PNG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+header .contenedor{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+header .contenedor .content_menu{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding: 0 5%;
+  padding-bottom: 25px;
+  transition: 0.5s ease-in-out;
+}
+
+header .contenedor .sticky{
+  background-color:  rgba(33, 106, 175, 0.911);
+}
+
+header .contenedor .content_menu h1{
+  font-family: 'Roboto', sans-serif;
+  margin-left: 30px;
+  margin-top: 25px;
+  color: rgb(255, 255, 255);
+}
+
+header .contenedor .conten_text{
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 0 0 5px ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .contenedor .conten_text p{
+  margin-left: 10px;
+  color: rgb(207, 253, 251);
+  font-size: 40px;
+}
+
+header .contenedor .content_menu ul li{
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  margin: 0px 30px;
+  margin-top: 30px;
+}
+
+header .contenedor .content_menu ul li a{
+  text-decoration: none;
+  display: block;
+  height: 50%;
+  color: white;
+}
+
+header .contenedor .content_menu ul li a:hover{
+  text-shadow: 0 0 5px;
+  font-size: 15px;
+  color: rgb(207, 253, 251);
+}
+
+/*FIN DE HEADER*/
+
+/*SECCION EXPERIENCIA*/
+.rules .contenedor{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.rules .contenedor .img-exp{
+  overflow: hidden;
+}
+
+.rules .contenedor .img-exp img{
+  width: 100%;
+}
+
+.rules .contenedor .cont-exp{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rules .contenedor .cont-exp h4,
+.rules .contenedor .cont-exp h1{
+  color: rgb(33, 106, 175);
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.rules .contenedor .cont-exp .work-exp{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rules .contenedor .cont-exp .work-exp .div90{
+  width: 90%;
+  visibility: visible;
+}
+
+
+.rules .contenedor .cont-exp .work-exp .div70{
+  width: 70%;
+}
+
+.rules .contenedor .cont-exp .work-exp .div40{
+  width: 40%;
+}
+
+.rules .contenedor .cont-exp .work-exp .exp-efect{
+  height: 40px;
+  margin-top: 20px;
+  border-bottom: 5px solid rgb(33, 106, 175);
+  position: relative;
+  display: flex;
+}
+
+.work-exp .exp-efect > p{
+  line-height: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.rules .contenedor .cont-exp .work-exp .exp-efect .porcentaje{
+  position: absolute;
+  right: -23px;
+}
+
+.exp-efect .porcentaje > i{
+  font-size: 35px;
+  color: rgb(33, 106, 175);
+  z-index: 1;
+}
+
+.exp-efect .porcentaje > p{
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  color: white;
+  font-size: 13px;
+  z-index: 2;
+  font-family: 'Roboto', sans-serif;
+}
+/*FIN SECCION EXPERIENCIA*/
+
+/*SECCION EQUIPO DE TRABAJO*/
+.equipo .contenedor{
+  overflow: hidden;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.equipo .contenedor h1{
+  margin: 10px 0; 
+  color: rgb(33, 106, 175);
+  font-family: 'Roboto', sans-serif;
+}
+
+.equipo .contenedor > p{
+  width: 70%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.equipo .contenedor .cont-team{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 400px;
+  margin: 50px 0;
+}
+
+.equipo .contenedor .cont-team .card{
+  width: 360px;
+  position: relative;
+}
+
+.equipo .contenedor .cont-team .id-01{
+  background-image: url(../img/team1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.equipo .contenedor .cont-team .id-02{
+  background-image: url(../img/team2.jpg);
+  background-position: top;
+  background-size: cover;
+}
+
+.equipo .contenedor .cont-team .id-03{
+  background-image: url(../img/team3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.equipo .contenedor .cont-team .card .text-card{
+  position: absolute;
+  width: 90%;
+  height: 86px;
+  padding: 20px;
+  background-color: rgb(33, 106, 175);
+  bottom: -30px;
+  left: 18px;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  transition: .5s ease;
+}
+
+.equipo .contenedor .cont-team .card .text-card p{
+  margin: 10px 0 20px 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.equipo .contenedor .cont-team .card .text-card .card-social{
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.text-card .card-social i{
+  font-size: 25px;
+}
+
+.equipo .contenedor .cont-team .card .text-card:hover{
+  background-color: #696258;
+  height: 137px;
+}
+/*FIN SECCION EQUIPO DE TRABAJO*/
+
+/*FOOTER*/
+.footer {
+  background-color: black;
+  padding: 20px;
+}
+.footer .contenedor{
+  display: grid;
+  grid-template-columns: 90% 10%;
+}
+.footer .contenedor div{
+  color: white;
+}
+
+.footer .contenedor div p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+.footer .contenedor div i{
+  color: white;
+  margin-left: 3px;
+  font-size: 20px;
+}
+
+.footer .contenedor div i:hover{
+  color: rgb(33, 106, 175);
+  font-size: 23px;
+}
+
+
+/*FIN FOOTER*/
+
+@media (max-width: 1150px){
+  .equipo .contenedor .cont-team .card{
+    margin-top: 40px;
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 900px){
+  .content_menu{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto !important;
+  }
+  .contenedor .conten_text{
+    width: 100%;
+    height: 80%;
+  }
+  .nav-toggle{
+    width: 40px;
+    height: 45px;
+    margin-top: 25px;
+    display: block;
+    float: right;
+    cursor: pointer;
+    text-align: center;
+  }
+  .nav-toggle::before{
+    content: '\f0c9';
+    font-family: "FontAwesome";
+    font-size: 30px;
+    color: white;
+  }
+  .nav-toggle.active::before{
+    content: '\f00d';
+    font-family: "FontAwesome";
+  }
+  nav{
+    display: none;
+  }
+  nav.active{
+    display: block;
+    width: 100%;
+  }
+  nav.active ul{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .conten-contactanos .contenedor .grid{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .conten-contactanos .contenedor .grid .info-us{
+    width: 80%;
+    margin-bottom: 40px;
+  }
+  .conten-contactanos .contenedor .grid .form{
+    width: 80%;
+  }
+  .rules .contenedor{
+    display: flex !important;
+    flex-direction: column;
+  }
+  .equipo .contenedor .cont-team .card{
+    margin-top: 40px;
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 800px){
+  .equipo .contenedor .cont-team{
+    justify-content: center !important;
+    align-items: center ;
+  }
+}
